@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9106F0861AE0961B00BA92F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106F0851AE0961B00BA92F3 /* AppDelegate.swift */; };
+		9106F0891AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9106F0871AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodeld */; };
+		9106F08B1AE0961B00BA92F3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106F08A1AE0961B00BA92F3 /* CameraViewController.swift */; };
+		9106F0901AE0961B00BA92F3 /* Hokie_Selfie.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9106F08F1AE0961B00BA92F3 /* Hokie_Selfie.xcassets */; };
+		9106F0931AE0961B00BA92F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9106F0911AE0961B00BA92F3 /* LaunchScreen.xib */; };
+		9106F09F1AE0961B00BA92F3 /* Hokie_SelfieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106F09E1AE0961B00BA92F3 /* Hokie_SelfieTests.swift */; };
+		9106F0AD1AE0AE7500BA92F3 /* VerticleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106F0AC1AE0AE7500BA92F3 /* VerticleScrollView.swift */; };
+		91100CD31B5C2F6500AF0AD7 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91100CD21B5C2F6500AF0AD7 /* OnboardViewController.swift */; };
+		911203801B50A0FF005D80D5 /* DMTextStripeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112037F1B50A0FF005D80D5 /* DMTextStripeImageView.swift */; };
+		915AE0291AE47536008222A0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915AE0281AE47536008222A0 /* Bolts.framework */; };
+		915AE02B1AE4753E008222A0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915AE02A1AE4753E008222A0 /* FBSDKCoreKit.framework */; };
+		915AE02D1AE476DE008222A0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915AE02C1AE476DE008222A0 /* FBSDKLoginKit.framework */; };
+		915AE02F1AE476E9008222A0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915AE02E1AE476E9008222A0 /* FBSDKShareKit.framework */; };
+		915AE0331AE4926E008222A0 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0321AE4926D008222A0 /* InitialViewController.swift */; };
+		916AC4D11B79351C00C57F21 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AC4D01B79351C00C57F21 /* CameraPreviewView.swift */; };
+		916AC4D51B793F3D00C57F21 /* CameraPreviewViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AC4D41B793F3D00C57F21 /* CameraPreviewViewDelegate.swift */; };
+		91A8C07F1B0D718200C4C0A9 /* facebookVector.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8C07E1B0D718200C4C0A9 /* facebookVector.png */; };
+		91A8C0811B0D720C00C4C0A9 /* facebookVector2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8C0801B0D720C00C4C0A9 /* facebookVector2.png */; };
+		91A8C0831B0EB0DC00C4C0A9 /* HokieImageViewsScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A8C0821B0EB0DC00C4C0A9 /* HokieImageViewsScroller.swift */; };
+		91C98A241AF0560D00587580 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C98A231AF0560D00587580 /* ShareViewController.swift */; };
+		91D87A191AE29F2A00804CDC /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D87A181AE29F2A00804CDC /* HorizontalScrollView.swift */; };
+		91D87A1B1AE2B8A900804CDC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D87A1A1AE2B8A900804CDC /* SignInViewController.swift */; };
+		91F5733C1B098A500047BF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F5733A1B098A500047BF3F /* Main.storyboard */; };
+		91F5733E1B0994A10047BF3F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5733D1B0994A10047BF3F /* CommentViewController.swift */; };
+		91FB48571B97C26800A78E03 /* HSImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB48561B97C26800A78E03 /* HSImageFactory.swift */; };
+		91FB48591B97D46400A78E03 /* HSColorAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB48581B97D46400A78E03 /* HSColorAndText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9106F0991AE0961B00BA92F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9106F0781AE0961B00BA92F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9106F07F1AE0961B00BA92F3;
+			remoteInfo = "Hokie Selfie";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9106F0801AE0961B00BA92F3 /* Hokie Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hokie Selfie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9106F0841AE0961B00BA92F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9106F0851AE0961B00BA92F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9106F0881AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hokie_Selfie.xcdatamodel; sourceTree = "<group>"; };
+		9106F08A1AE0961B00BA92F3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9106F08F1AE0961B00BA92F3 /* Hokie_Selfie.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Hokie_Selfie.xcassets; sourceTree = "<group>"; };
+		9106F0921AE0961B00BA92F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9106F0981AE0961B00BA92F3 /* Hokie SelfieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hokie SelfieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9106F09D1AE0961B00BA92F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9106F09E1AE0961B00BA92F3 /* Hokie_SelfieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hokie_SelfieTests.swift; sourceTree = "<group>"; };
+		9106F0AC1AE0AE7500BA92F3 /* VerticleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticleScrollView.swift; sourceTree = "<group>"; };
+		91100CD21B5C2F6500AF0AD7 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardViewController.swift; path = ../OnboardViewController.swift; sourceTree = "<group>"; };
+		9112037F1B50A0FF005D80D5 /* DMTextStripeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTextStripeImageView.swift; sourceTree = "<group>"; };
+		915AE0251AE474C1008222A0 /* Hokie Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hokie Selfie-Bridging-Header.h"; sourceTree = "<group>"; };
+		915AE0281AE47536008222A0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		915AE02A1AE4753E008222A0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		915AE02C1AE476DE008222A0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		915AE02E1AE476E9008222A0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		915AE0321AE4926D008222A0 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		916AC4D01B79351C00C57F21 /* CameraPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		916AC4D41B793F3D00C57F21 /* CameraPreviewViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewViewDelegate.swift; sourceTree = "<group>"; };
+		91A8C07E1B0D718200C4C0A9 /* facebookVector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookVector.png; sourceTree = "<group>"; };
+		91A8C0801B0D720C00C4C0A9 /* facebookVector2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookVector2.png; sourceTree = "<group>"; };
+		91A8C0821B0EB0DC00C4C0A9 /* HokieImageViewsScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HokieImageViewsScroller.swift; sourceTree = "<group>"; };
+		91C98A231AF0560D00587580 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		91D87A181AE29F2A00804CDC /* HorizontalScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		91D87A1A1AE2B8A900804CDC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		91F5733B1B098A500047BF3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91F5733D1B0994A10047BF3F /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		91FB48561B97C26800A78E03 /* HSImageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSImageFactory.swift; sourceTree = "<group>"; };
+		91FB48581B97D46400A78E03 /* HSColorAndText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSColorAndText.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9106F07D1AE0961B00BA92F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915AE02F1AE476E9008222A0 /* FBSDKShareKit.framework in Frameworks */,
+				915AE0291AE47536008222A0 /* Bolts.framework in Frameworks */,
+				915AE02B1AE4753E008222A0 /* FBSDKCoreKit.framework in Frameworks */,
+				915AE02D1AE476DE008222A0 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9106F0951AE0961B00BA92F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9106F0771AE0961B00BA92F3 = {
+			isa = PBXGroup;
+			children = (
+				9106F0821AE0961B00BA92F3 /* Hokie Selfie */,
+				9106F09B1AE0961B00BA92F3 /* Hokie SelfieTests */,
+				9106F0811AE0961B00BA92F3 /* Products */,
+				915AE0251AE474C1008222A0 /* Hokie Selfie-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		9106F0811AE0961B00BA92F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9106F0801AE0961B00BA92F3 /* Hokie Selfie.app */,
+				9106F0981AE0961B00BA92F3 /* Hokie SelfieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9106F0821AE0961B00BA92F3 /* Hokie Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				915AE02E1AE476E9008222A0 /* FBSDKShareKit.framework */,
+				915AE02C1AE476DE008222A0 /* FBSDKLoginKit.framework */,
+				915AE02A1AE4753E008222A0 /* FBSDKCoreKit.framework */,
+				915AE0281AE47536008222A0 /* Bolts.framework */,
+				91A8C07E1B0D718200C4C0A9 /* facebookVector.png */,
+				91A8C0801B0D720C00C4C0A9 /* facebookVector2.png */,
+				9106F0851AE0961B00BA92F3 /* AppDelegate.swift */,
+				915AE0321AE4926D008222A0 /* InitialViewController.swift */,
+				91D87A1A1AE2B8A900804CDC /* SignInViewController.swift */,
+				91100CD21B5C2F6500AF0AD7 /* OnboardViewController.swift */,
+				91F5733D1B0994A10047BF3F /* CommentViewController.swift */,
+				91C98A231AF0560D00587580 /* ShareViewController.swift */,
+				9106F08A1AE0961B00BA92F3 /* CameraViewController.swift */,
+				91F5733A1B098A500047BF3F /* Main.storyboard */,
+				91FB48561B97C26800A78E03 /* HSImageFactory.swift */,
+				91FB48581B97D46400A78E03 /* HSColorAndText.swift */,
+				9112037F1B50A0FF005D80D5 /* DMTextStripeImageView.swift */,
+				916AC4D01B79351C00C57F21 /* CameraPreviewView.swift */,
+				916AC4D41B793F3D00C57F21 /* CameraPreviewViewDelegate.swift */,
+				91A8C0821B0EB0DC00C4C0A9 /* HokieImageViewsScroller.swift */,
+				9106F0AC1AE0AE7500BA92F3 /* VerticleScrollView.swift */,
+				91D87A181AE29F2A00804CDC /* HorizontalScrollView.swift */,
+				9106F08F1AE0961B00BA92F3 /* Hokie_Selfie.xcassets */,
+				9106F0911AE0961B00BA92F3 /* LaunchScreen.xib */,
+				9106F0871AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodeld */,
+				9106F0831AE0961B00BA92F3 /* Supporting Files */,
+			);
+			path = "Hokie Selfie";
+			sourceTree = "<group>";
+		};
+		9106F0831AE0961B00BA92F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9106F0841AE0961B00BA92F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9106F09B1AE0961B00BA92F3 /* Hokie SelfieTests */ = {
+			isa = PBXGroup;
+			children = (
+				9106F09E1AE0961B00BA92F3 /* Hokie_SelfieTests.swift */,
+				9106F09C1AE0961B00BA92F3 /* Supporting Files */,
+			);
+			path = "Hokie SelfieTests";
+			sourceTree = "<group>";
+		};
+		9106F09C1AE0961B00BA92F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9106F09D1AE0961B00BA92F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9106F07F1AE0961B00BA92F3 /* Hokie Selfie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9106F0A21AE0961B00BA92F3 /* Build configuration list for PBXNativeTarget "Hokie Selfie" */;
+			buildPhases = (
+				9106F07C1AE0961B00BA92F3 /* Sources */,
+				9106F07D1AE0961B00BA92F3 /* Frameworks */,
+				9106F07E1AE0961B00BA92F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hokie Selfie";
+			productName = "Hokie Selfie";
+			productReference = 9106F0801AE0961B00BA92F3 /* Hokie Selfie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9106F0971AE0961B00BA92F3 /* Hokie SelfieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9106F0A51AE0961B00BA92F3 /* Build configuration list for PBXNativeTarget "Hokie SelfieTests" */;
+			buildPhases = (
+				9106F0941AE0961B00BA92F3 /* Sources */,
+				9106F0951AE0961B00BA92F3 /* Frameworks */,
+				9106F0961AE0961B00BA92F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9106F09A1AE0961B00BA92F3 /* PBXTargetDependency */,
+			);
+			name = "Hokie SelfieTests";
+			productName = "Hokie SelfieTests";
+			productReference = 9106F0981AE0961B00BA92F3 /* Hokie SelfieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9106F0781AE0961B00BA92F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ok Doug";
+				TargetAttributes = {
+					9106F07F1AE0961B00BA92F3 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4743B37GFL;
+					};
+					9106F0971AE0961B00BA92F3 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 9106F07F1AE0961B00BA92F3;
+					};
+				};
+			};
+			buildConfigurationList = 9106F07B1AE0961B00BA92F3 /* Build configuration list for PBXProject "Hokie Selfie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9106F0771AE0961B00BA92F3;
+			productRefGroup = 9106F0811AE0961B00BA92F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9106F07F1AE0961B00BA92F3 /* Hokie Selfie */,
+				9106F0971AE0961B00BA92F3 /* Hokie SelfieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9106F07E1AE0961B00BA92F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9106F0931AE0961B00BA92F3 /* LaunchScreen.xib in Resources */,
+				91A8C07F1B0D718200C4C0A9 /* facebookVector.png in Resources */,
+				9106F0901AE0961B00BA92F3 /* Hokie_Selfie.xcassets in Resources */,
+				91F5733C1B098A500047BF3F /* Main.storyboard in Resources */,
+				91A8C0811B0D720C00C4C0A9 /* facebookVector2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9106F0961AE0961B00BA92F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9106F07C1AE0961B00BA92F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F5733E1B0994A10047BF3F /* CommentViewController.swift in Sources */,
+				911203801B50A0FF005D80D5 /* DMTextStripeImageView.swift in Sources */,
+				916AC4D11B79351C00C57F21 /* CameraPreviewView.swift in Sources */,
+				91D87A191AE29F2A00804CDC /* HorizontalScrollView.swift in Sources */,
+				915AE0331AE4926E008222A0 /* InitialViewController.swift in Sources */,
+				9106F08B1AE0961B00BA92F3 /* CameraViewController.swift in Sources */,
+				91A8C0831B0EB0DC00C4C0A9 /* HokieImageViewsScroller.swift in Sources */,
+				916AC4D51B793F3D00C57F21 /* CameraPreviewViewDelegate.swift in Sources */,
+				91D87A1B1AE2B8A900804CDC /* SignInViewController.swift in Sources */,
+				91FB48571B97C26800A78E03 /* HSImageFactory.swift in Sources */,
+				91100CD31B5C2F6500AF0AD7 /* OnboardViewController.swift in Sources */,
+				9106F0891AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodeld in Sources */,
+				9106F0861AE0961B00BA92F3 /* AppDelegate.swift in Sources */,
+				91FB48591B97D46400A78E03 /* HSColorAndText.swift in Sources */,
+				91C98A241AF0560D00587580 /* ShareViewController.swift in Sources */,
+				9106F0AD1AE0AE7500BA92F3 /* VerticleScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9106F0941AE0961B00BA92F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9106F09F1AE0961B00BA92F3 /* Hokie_SelfieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9106F09A1AE0961B00BA92F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9106F07F1AE0961B00BA92F3 /* Hokie Selfie */;
+			targetProxy = 9106F0991AE0961B00BA92F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9106F0911AE0961B00BA92F3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9106F0921AE0961B00BA92F3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		91F5733A1B098A500047BF3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F5733B1B098A500047BF3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9106F0A01AE0961B00BA92F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9106F0A11AE0961B00BA92F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9106F0A31AE0961B00BA92F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Doug/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = "Hokie Selfie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dmead.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hokie Selfie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9106F0A41AE0961B00BA92F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Doug/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = "Hokie Selfie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dmead.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hokie Selfie-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9106F0A61AE0961B00BA92F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hokie SelfieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "okdoug.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hokie Selfie.app/Hokie Selfie";
+			};
+			name = Debug;
+		};
+		9106F0A71AE0961B00BA92F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hokie SelfieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "okdoug.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hokie Selfie.app/Hokie Selfie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9106F07B1AE0961B00BA92F3 /* Build configuration list for PBXProject "Hokie Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9106F0A01AE0961B00BA92F3 /* Debug */,
+				9106F0A11AE0961B00BA92F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9106F0A21AE0961B00BA92F3 /* Build configuration list for PBXNativeTarget "Hokie Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9106F0A31AE0961B00BA92F3 /* Debug */,
+				9106F0A41AE0961B00BA92F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9106F0A51AE0961B00BA92F3 /* Build configuration list for PBXNativeTarget "Hokie SelfieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9106F0A61AE0961B00BA92F3 /* Debug */,
+				9106F0A71AE0961B00BA92F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9106F0871AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9106F0881AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodel */,
+			);
+			currentVersion = 9106F0881AE0961B00BA92F3 /* Hokie_Selfie.xcdatamodel */;
+			path = Hokie_Selfie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9106F0781AE0961B00BA92F3 /* Project object */;
+}
