@@ -46,18 +46,58 @@ class CameraViewController: UIViewController, UIGestureRecognizerDelegate, Camer
         //find correct hokieImageView
         if let hokieImageView = self.hokieImageViewsScroller!.getCurrentHokieImageView() {
             //get composite UIImage
-            self.completeImage = self.compositeImage(image, image2View: hokieImageView)
+            //self.completeImage = self.compositeImage(image, image2View: hokieImageView)
+            self.compositeImage(backgroundImage: hokieImageView.image!, foregroundImage: hokieImageView.image!, foregroundImageAlpha: hokieImageView.alpha, coordinates: CGPoint(x: hokieImageView.frame.minX, y: hokieImageView.frame.minY), onComplete: {
+                [weak self] (finalImage: UIImage) in
+                
+                //create UIImageView
+                /*
+                let completeImageView = UIImageView(image: finalImage)
+                completeImageView.frame = self.view.frame
+                */
+                
+                //segue to the ShareViewController (will use self.completeImage)
+                self?.completeImage = finalImage
+                self?.performSegueWithIdentifier("cameraToShare", sender: self)
+                
+            })
             
-            //create UIImageView
-            let completeImageView = UIImageView(image: self.completeImage)
-            completeImageView.frame = self.view.frame
-            
-            //segue to the ShareViewController (will use self.completeImage
-            self.performSegueWithIdentifier("cameraToShare", sender: self)
         } else {
             print("Error: hokieImageViews not defined in CameraViewController.captureCompleteImage()\nPossibly need to wait for download of images.")
         }
 
+    }
+    
+    func compositeImage(backgroundImage backgroundImage: UIImage, foregroundImage: UIImage, foregroundImageAlpha alpha: CGFloat, coordinates: CGPoint, onComplete: (finalImage: UIImage) -> Void) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
+            UIGraphicsBeginImageContext(foregroundImage.size)
+            
+            let ctx = UIGraphicsGetCurrentContext()
+            
+            CGContextSetAlpha(ctx, alpha)
+            CGContextDrawImage(ctx, CGRect(x: 0, y: 0, width: foregroundImage.size.width, height: foregroundImage.size.height), foregroundImage.CGImage)
+            
+            let tempImage = UIGraphicsGetImageFromCurrentImageContext()
+            
+            let foregroundImageAlpha = UIImage(CGImage: tempImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.DownMirrored)
+            
+            UIGraphicsEndImageContext()
+            
+            //combine image2Alpha and image1 (camera photo)
+            UIGraphicsBeginImageContext(CGSize(width: self.view.frame.width, height: self.view.frame.height))
+            
+            backgroundImage.drawInRect(CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+            foregroundImageAlpha.drawInRect(CGRect(x: coordinates.x, y: coordinates.y, width: foregroundImage.size.width, height:  foregroundImage.size.height))
+            
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            
+            UIGraphicsEndImageContext()
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                onComplete(finalImage: newImage)
+            })
+            
+        })
     }
     
     func compositeImage(image1: UIImage, image2View: UIImageView) -> UIImage {
